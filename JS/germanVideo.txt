@@ -1,0 +1,26 @@
+Dos formas de crear ibjetos 
+
+Notacion literal y notacion constructora.
+
+
+Notacion literal 
+
+var pedro = {
+	name: "pedro perez",
+	age: 25
+};
+
+Notacion funcion constructora
+
+function User(name,age) {
+	this.name = name;
+	this.age = age;
+};
+
+Un objeto es:
+Una coleccion de propuedades. Cada propiedad esta compuesta de una llave y un valor.
+
+
+This hace referencia al contexto del objeto. Encerrado en una funcion constructora con new
+this corresponde a ese objeto nuevo que se esta construyendo, sino, se toma this como
+el contexto global es como si perdiera la referencia.

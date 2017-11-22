@@ -1,0 +1,25 @@
+var pepito = {
+    nombre: 'Pepito'
+}
+
+var hijos = {
+    numero: 3
+}
+
+var hijo = {
+  nombre: 'German'
+}
+var hijos = {
+  german: hijo
+}
+
+var bmi = function(altura,peso){return(peso/altura^2)}
+
+var maria = { 
+    esposo: pepito,
+    peso: 60,
+    altura: 1.70,
+    hijos: hijos,
+    bmi: bmi
+    
+}
