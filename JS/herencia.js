@@ -11,21 +11,35 @@ Car.prototype.break = function(amount) {
   return this;
 }
 
-Bus.prototype = Object.create(Car.prototype)
-Bus.prototype.constructor = Bus;
 
 function Bus(){
 	this.beep = function(){
-		return console.log("BEEP!");
+		return ("BEEP!");
 	}
+	this.velocity = 0;
 
 }
 
+Bus.prototype = Object.create(Car.prototype)
 
 
 var bus = new Bus();
-var cars = bus.velocity;
-console.log(cars)
+var bus = new Bus();
+console.log(bus.velocity); // => 0
+
+bus.accelerate();
+console.log(bus.velocity); // => 1
+
+bus.accelerate(2);
+console.log(bus.velocity); // => 3
+
+bus.break();
+console.log(bus.velocity); // => 2
+
+bus.break(2);
+console.log(bus.velocity); // => 2
+
+bus.beep(); // => "BEEP!"
 
 
 
