@@ -13,3 +13,7 @@ button {
 }
 table { width: 100%; }
 table th, table td { padding: 7px 5px; border-bottom: 1px solid #ccc; }
+
+table{
+	display: none;
+}

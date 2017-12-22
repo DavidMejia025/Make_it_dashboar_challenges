@@ -7,6 +7,8 @@
 
 $(".wrapper button").on("click", function(){
 	$(".wrapper").hide()
+	//$("body").append("<table><thead><tr><th> 'Flag' </th> <th> 'Code'</th><th> 'Name'</th></tr></thead> <tbody></tbody></table>"
+  	$("table").css("display","block")
 	for ( var i=0; i<4; i++){
 		$("tbody").append(`<tr> <td><img src="${countries[i].flag_url}" alt="" /> </td> <td> ${countries[i].code} </td> <td> ${countries[i].name} </td> </tr>`)
 	}
