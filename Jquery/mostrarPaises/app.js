@@ -5,16 +5,11 @@
   { "code": "BO", "name": "Bolivia", "flag_url": "https://s3.amazonaws.com/makeitreal/bo.gif" }
 ];
 
-// escribe tu código acá
-$("#start").on("click", function(e){
-	console.log("Hola")
-  create_table()
+$(".wrapper button").on("click", function(){
+	$(".wrapper").hide()
+	for ( var i=0; i<4; i++){
+		$("tbody").append(`<tr> <td><img src="${countries[i].flag_url}" alt="" /> </td> <td> ${countries[i].code} </td> <td> ${countries[i].name} </td> </tr>`)
+	}
+
 })
 
-function create_table(countries) {
-
-	countries.map(function(element) {
-
-	})
-
-}
