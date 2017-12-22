@@ -6,10 +6,10 @@
 ];
 
 $(".wrapper button").on("click", function(){
-	$(".wrapper").hide()
+	$(".wrapper button").hide()
 	//$("body").append("<table><thead><tr><th> 'Flag' </th> <th> 'Code'</th><th> 'Name'</th></tr></thead> <tbody></tbody></table>"
   	
-	$("body").append("<table></table>")
+	$(".wrapper").append("<table></table>")
 
 	$("table").append("<tr><th> Flag </th><th> Code </th><th> name </th> </tr>")
 	$("table").append("<tbody> </tbody>")
