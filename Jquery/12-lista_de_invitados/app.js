@@ -5,7 +5,7 @@ $( document ).ready(function() {
     var last_name = $("#last-name").val()
     var mobile_number = $("#mobile-number").val()
     var confirmed = $("#confirmed").is(':checked')
-    $("tbody").append(`<tr> <td>${first_name}</td> <td>${last_name}</td> <td class="text-center">${mobile_number}</td> <td class="text-center">${confirmed}</td> </tr>`)
+    $(".table").append(`<tr> <td>${first_name}</td> <td>${last_name}</td> <td class="text-center">${mobile_number}</td> <td class="text-center">${confirmed}</td> </tr>`)
     $("#first-name").val("")
     $("#last-name").val("")
     $("#mobile-number").val("")
@@ -14,7 +14,6 @@ $( document ).ready(function() {
 
   })
 });
-
 
 
 
