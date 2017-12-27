@@ -9,6 +9,28 @@
   <div class="wrapper">
     <button>Mostrar paises</button>
   </div>
+  <script id="country-template" type="text/x-handlebars-template">
+  <div class="entry">
+    <table>
+      <thead>
+        <tr>
+          <th> Flag</th>
+          <th> Code</th>
+          <th> Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each paises}}
+        <tr>
+          <td><img src="{{flag_url}}" alt=""></td>
+          <td>{{code}}</td>
+          <td>{{name}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</script>
   <!-- <div class="tabla">
   <table>
     <thead>
@@ -26,6 +48,7 @@
   </div> -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
 <script src= "app.js"></script>
 </body>
 </html>
